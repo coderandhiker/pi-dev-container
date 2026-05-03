@@ -1,0 +1,12 @@
+# User workspace files - not part of the project
+workspace/*
+!workspace/.gitkeep
+
+# Pi.dev session history
+llm-config/sessions/
+
+# Pi.dev bundled binaries (platform-specific, managed by Pi)
+llm-config/bin/
+
+# Pi.dev auth credentials (API keys for cloud providers)
+llm-config/auth.json

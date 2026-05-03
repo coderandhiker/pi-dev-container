@@ -1,0 +1,28 @@
+{
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://10.0.0.135:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        { "id": "YOUR_OLLAMA_MODEL_HERE" }
+      ]
+    },
+    "lm-studio": {
+      "baseUrl": "http://10.0.0.229:1234/v1",
+      "api": "openai-completions",
+      "apiKey": "lm-studio",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        { "id": "qwen/qwen3.5-35b-a3b" }
+      ]
+    }
+  }
+}

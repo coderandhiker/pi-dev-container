@@ -1,0 +1,25 @@
+{
+  "name": "Pi Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/llm-config,target=/home/developer/.pi/agent,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached"
+  ],
+  "remoteUser": "developer",
+  "postCreateCommand": "validate-tooling",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-dotnettools.csharp",
+        "ms-python.python",
+        "rust-lang.rust-analyzer",
+        "golang.Go",
+        "denoland.vscode-deno",
+        "oven-sh.bun-vscode"
+      ]
+    }
+  }
+}
