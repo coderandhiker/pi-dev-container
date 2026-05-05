@@ -51,7 +51,7 @@ First build can take a while — it pulls a full polyglot toolchain including mu
 
 ```bash
 docker run -it \
-  -v "$(pwd)/llm-config":/home/developer/.pi/agent \
+  -v "$(pwd)/llm-config":/root/.pi/agent \
   -v "$(pwd)/workspace":/workspace \
   pi-dev:latest
 ```

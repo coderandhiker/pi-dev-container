@@ -9,7 +9,7 @@
         "supportsReasoningEffort": false
       },
       "models": [
-        { "id": "YOUR_OLLAMA_MODEL_HERE" }
+        { "id": "qwen3-coder:30b" }
       ]
     },
     "lm-studio": {

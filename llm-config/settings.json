@@ -1,5 +1,5 @@
 {
-  "defaultProvider": "ollama",
-  "lastChangelogVersion": "0.72.1",
+  "defaultProvider": "lm-studio",
+  "lastChangelogVersion": "0.73.0",
   "defaultModel": "qwen/qwen3.5-35b-a3b"
 }

@@ -174,9 +174,7 @@ RUN npm install -g playwright \
 COPY scripts/validate-tooling.sh /usr/local/bin/validate-tooling
 RUN chmod +x /usr/local/bin/validate-tooling
 
-# ── Non-root user ─────────────────────────────────────────────────────────────
-RUN useradd -ms /bin/bash developer
-USER developer
+# ── Run as root (Pi.dev tool calls need unrestricted write access) ────────────
 WORKDIR /workspace
 
 CMD ["/bin/bash"]

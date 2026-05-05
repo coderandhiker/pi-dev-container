@@ -4,10 +4,10 @@
     "dockerfile": "../Dockerfile"
   },
   "mounts": [
-    "source=${localWorkspaceFolder}/llm-config,target=/home/developer/.pi/agent,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/llm-config,target=/root/.pi/agent,type=bind,consistency=cached",
     "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached"
   ],
-  "remoteUser": "developer",
+  "remoteUser": "root",
   "postCreateCommand": "validate-tooling",
   "customizations": {
     "vscode": {

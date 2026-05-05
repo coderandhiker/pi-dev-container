@@ -1,10 +1,10 @@
 # llm-config
 
 This directory is the Pi.dev configuration directory. It is bind-mounted into
-the container at `/home/developer/.pi/agent/` at runtime:
+the container at `/root/.pi/agent/` at runtime:
 
 ```
-./llm-config  →  /home/developer/.pi/agent/
+./llm-config  →  /root/.pi/agent/
 ```
 
 Pi.dev reads `models.json` and `settings.json` from this directory on startup
